@@ -14,14 +14,8 @@
       padding-bottom:25px;
     }
 
-    #learn {
+    .learn {
       float:right;
-    }
-
-    @media screen and (max-width:800px) {
-      #learn, #offers {
-        width:100%;
-      }
     }
 
     #first, #third {
@@ -37,7 +31,7 @@
       margin:30px;
     }
 
-    #offers {
+    .offers {
       background-color:#8c8c8c;
       color:white;
       font-size:20px;
@@ -69,6 +63,20 @@
       font-size:20px;
       margin:30px;
     }
+
+    @media screen and (max-width:800px) {
+      .learn {
+        width:100%;
+        height:auto;
+      }
+
+      .offers {
+        width:100%;
+        margin:0;
+        margin:0;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -86,7 +94,7 @@
         <li class="pages"><a href="contact.htm">Contact</a></li>
       </ul>
 
-      <p class="title"><img id="learn" src="learn.png" alt="Learn" style="height:250px;">Welcome from Sarah and Katherine...</p>
+      <p class="title"><img class="learn" src="learn.png" alt="Learn" style="height:250px;">Welcome from Sarah and Katherine...</p>
 
       <p id="first">We believe that learning needs to be active, purposeful and to include lots of practice questions.</p>
 
@@ -105,7 +113,7 @@
 
       <p id="third">We are looking forward to helping students to learn and achieve their potential in future exams.</p>
 
-      <div id="offers">
+      <div class="offers">
         <p id="services">Services offered:</p>
         <table>
           <tr>
@@ -146,7 +154,7 @@
       <div class="footer-middle">
         <ul class="foot">
           <li class="bold">CHEMISTRY</li>
-          <li class="bold">A-level 1st Year</li>
+          <li class="bold">A Level 1st Year</li>
           <li><a href="first-foundations.htm">Foundations</a></li>
           <li><a href="first-physical.htm">Physical and Inorganic</a></li>
           <li><a href="first-organic.htm">Organic</a></li>
@@ -156,7 +164,7 @@
 
      <div class="footer-right">
         <ul class="foot">
-          <li class="bold">A-level 2nd Year</li>
+          <li class="bold">A Level 2nd Year</li>
           <li><a href="second-physical.htm">Physical and Inorganic</a></li>
           <li><a href="second-organic.htm">Organic</a></li>
           <li><a href="second-experimental.htm">Experimental</a></li>
