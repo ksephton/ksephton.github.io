@@ -25,12 +25,6 @@
       width:50%;
     }
 
-    @media screen and (max-width:800px) {
-      .left, .right {
-        width:100%;
-      }
-    }
-
     .photo {
       display: block;
       margin-left: auto;
@@ -60,6 +54,23 @@
     .list .point {
       margin:5px;
       list-style-type:disc;
+    }
+
+    @media screen and (max-width:800px) {
+      .left, .right {
+        width:100%;
+      }
+
+      .photo {
+        margin:auto;
+        float:center;
+      }
+
+      .inner {
+        margin:0;
+        width:95%;
+        float:center;
+      }
     }
   </style>
 </head>
