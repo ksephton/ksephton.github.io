@@ -137,3 +137,18 @@
       text-align:center;
       padding:170px;
     }
+
+    .worksheet-link:link {
+      color: black;
+      text-decoration: none;
+    }
+
+    .worksheet-link:visited {
+      color: black;
+      text-decoration: none;
+    }
+
+    .worksheet-link:hover {
+      color: #1ac6ff;
+      text-decoration: none;
+    }
