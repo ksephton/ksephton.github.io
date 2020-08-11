@@ -9,6 +9,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="main.css" />
   <style>
+    .subject {
+      display:block;
+    }
+
+    .video {
+      float:left;
+      width:50%;
+    }
+
+    .worksheet {
+      float:left;
+      width:50%;
+      height:100%;
+    }
+
+    @media screen and (max-width:850px) {
+      .video, .worksheet {
+        width:100%;
+      }
+    }
+
+    .video-player {
+      width:100%;
+      height:auto;
+    }
+
+    .video-wrapper {
+      position:relative;
+      padding-bottom:56.25%;
+    }
+
+    iframe {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+
+    .link-wrapper {
+      position:relative;
+      padding-bottom:35%;
+      padding-top:15%;
+      padding-left:50px;
+      padding-right:50px;
+    }
+
+    .worksheet-link {
+      text-align:center;
+      font-size:35px;
+    }
   </style>
 </head>
 <body>
@@ -26,9 +77,37 @@
         <li class="pages"><a href="contact.htm">Contact</a></li>
       </ul>
 
-     <p class="title">Organic Chemistry</p>
+      <p class="title">Organic Chemistry</p>
 
-     <p class="coming-soon">Coming soon...</p>
+      <div class="subject">
+        <div class="video">
+          <div class="video-wrapper">
+            <iframe frameborder="0" width=100% height=100% src="https://www.youtube.com/embed/6jrXeQpWy0g">
+            </iframe>
+          </div>
+        </div>
+      
+        <div class="worksheet">
+          <div class="link-wrapper">
+            <a class="worksheet-link" href="https://drive.google.com/file/d/11o1ZCO48o8tNRhTGzAG00wvxlZwVMZW6/view?usp=sharing">Reactions of benzene worksheet</a>  
+          </div>
+        </div>
+      </div>
+
+      <div class="subject">
+        <div class="video">
+          <div class="video-wrapper">
+            <iframe frameborder="0" width=100% height=100% src="https://www.youtube.com/embed/7UUdi7r2vsY">
+            </iframe>
+          </div>
+        </div>
+      
+        <div class="worksheet">
+          <div class="link-wrapper">
+            <a class="worksheet-link" href="https://drive.google.com/file/d/1reMv2Ia7MrFuqaEtdTBIh7JHtRFLrDr3/view?usp=sharing">Structure of benzene worksheet</a>
+          </div>
+        </div>
+      </div>
 
     </div>
     <footer id="footer">
