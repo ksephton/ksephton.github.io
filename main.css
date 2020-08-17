@@ -101,24 +101,18 @@
     .footer-left {
       padding:5px;
       float:left;
-      width:34%;
-      padding-bottom:13px;
-    }
-
-    .footer-middle {
-      padding:5px;
-      float:left;
-      width:33%;
+      width:50%;
     }
 
     .footer-right {
-      padding:5px;
+      padding-top:25px;
+      padding-bottom:25px;
       float:left;
-      width:33%;
+      width:50%;
     }
 
    @media screen and (max-width:800px) {
-      .footer-left, .footer-middle, .footer-right {
+      .footer-left, .footer-right {
         width:100%;
       }
     }
