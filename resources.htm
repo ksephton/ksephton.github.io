@@ -10,16 +10,26 @@
   <link rel="stylesheet" type="text/css" href="main.css" />
   <style>
     .chemistry-left {
-      padding:100px;
       width:50%;
-      background-color:#80dfff;
-      margin:auto;
-      height:500px;
-      transition:box-shadow .3s;
+      float:left;
+      padding:5%;
     }
 
+    .maths-right {
+      width:50%;
+      float:left;
+      padding:5%;
+    }
 
-    #chemistry {
+    .inside {
+      background-color:#d9d9d9;
+      padding:10px;
+      transition:box-shadow .3s;
+      height:500px;
+      padding-top:50px;
+    }
+
+    .name {
       color:white;
       text-align:center;
     }
@@ -28,11 +38,11 @@
       text-decoration:none;
     }
 
-    .chemistry-left:hover {
+    .inside:hover {
       box-shadow: 0 0 11px rgba(33,33,33,.5); 
     }
 
-    #center {
+    .center {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -40,16 +50,12 @@
     }
 
    @media screen and (max-width:800px) {
-      .chemistry-left {
+      .chemistry-left, .maths-right {
         width:100%;
         padding:20%;
       }
 
-      #chemistry {
-        text-align:center;
-      }
-
-      #center {
+      .center {
         margin-left:auto;
         margin-right:auto;
       }
@@ -75,8 +81,19 @@
 
       <a class="subject" href="chemistry.htm">
         <div class="chemistry-left">
-          <h1 id="chemistry">CHEMISTRY</h1>
-          <img id="center" src="chem-logo.png" alt="conical flask" style="width:250px;height:250px;">
+          <div class="inside">
+            <h1 class="name">CHEMISTRY</h1>
+            <img class="center" src="chem-logo.png" alt="conical flask" style="width:250px;height:250px;">
+          </div>
+        </div
+      </a>
+
+      <a class="subject" href="maths.htm">
+        <div class="maths-right">
+          <div class="inside">
+            <h1 class="name">MATHEMATICS</h1>
+            <img class="center" src="maths-logo.png" alt="maths symbols" style="width:250px;height:250px;">
+          </div>
         </div>
       </a>
 

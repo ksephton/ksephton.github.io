@@ -4,13 +4,43 @@
   <meta charset="UTF-8">
   <title>Sephton Tutoring: Online Tutoring and Resources</title>
   <meta name="description" content="Online Tutoring and Resources">
-  <meta name="keywords" content="Tutoring, Chemistry, Maths, Resources, Dr Sarah Sephton, Sephton, Contact">
+  <meta name="keywords" content="Tutoring, Chemistry, Maths, Resources, Dr Sarah Sephton, Sephton, Organic, A-level">
   <meta name="author" content="Katherine Sephton">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="main.css" />
   <style>
-    .contact {
-      margin:30px;
+    .subject {
+      display:block;
+    }
+
+    .resource {
+      float:left;
+      width:50%;
+    }
+
+    .worksheet {
+      float:left;
+      width:50%;
+      height:100%;
+    }
+
+    @media screen and (max-width:850px) {
+      .resource, .worksheet {
+        width:100%;
+      }
+    }
+
+    .link-wrapper {
+      position:relative;
+      padding-bottom:35%;
+      padding-top:15%;
+      padding-left:50px;
+      padding-right:50px;
+    }
+
+    .worksheet-link {
+      text-align:center;
+      font-size:35px;
     }
   </style>
 </head>
@@ -29,11 +59,21 @@
         <li class="pages"><a href="contact.htm">Contact</a></li>
       </ul>
 
-      <p class="title">Contact</p>
+      <p class="title">GCSE Maths</p>
 
-      <p class="contact">For enquiries about online Chemistry tuition, please email: <a href="mailto:sarah@sephtontutoring.com">sarah@sephtontutoring.com</a></p>
-      <p class="contact">For enquiries about online Mathematics tuition, please email: <a href="mailto:katherine@sephtontutoring.com">katherine@sephtontutoring.com</a></p>
-      <p class="contact">Or call: +44 7512 803733</p>
+      <div class="subject">
+        <div class="resource">
+          <div class="link-wrapper">
+            <a class="worksheet-link" href="https://drive.google.com/file/d/1aw0Xusn5MHKpFLn26w3ShSLAS6yyCa66/view?usp=sharing">Factorising</a>  
+          </div>
+        </div>
+      
+        <div class="worksheet">
+          <div class="link-wrapper">
+            <a class="worksheet-link" href="https://drive.google.com/file/d/16u4efj6wkIhjw5tvRFXAnaQn38Mmyydc/view?usp=sharing">Factorising worksheet</a>  
+          </div>
+        </div>
+      </div>
 
     </div>
     <footer id="footer">
