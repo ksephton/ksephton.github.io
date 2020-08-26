@@ -10,6 +10,58 @@
   <link rel="stylesheet" type="text/css" href="main.css" />
   <style>
   </style>
+    .subject {
+      display:block;
+    }
+
+    .video {
+      float:left;
+      width:50%;
+    }
+
+    .worksheet {
+      float:left;
+      width:50%;
+      height:100%;
+    }
+
+    @media screen and (max-width:850px) {
+      .video, .worksheet {
+        width:100%;
+      }
+    }
+
+    .video-player {
+      width:100%;
+      height:auto;
+    }
+
+    .video-wrapper {
+      position:relative;
+      padding-bottom:56.25%;
+    }
+
+    iframe {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+    }
+
+    .link-wrapper {
+      position:relative;
+      padding-bottom:35%;
+      padding-top:15%;
+      padding-left:50px;
+      padding-right:50px;
+    }
+
+    .worksheet-link {
+      text-align:center;
+      font-size:35px;
+    }
+  </style>
 </head>
 <body>
   <div class="page-container">
@@ -26,28 +78,23 @@
         <li class="pages"><a href="contact.htm">Contact</a></li>
       </ul>
 
-     <p class="title">Foundations in Chemistry</p>
+      <p class="title">Foundations in Chemistry</p>
 
-     <p class="coming-soon">Coming soon...</p>
-
-    </div>
-    <footer id="footer">
-      <div class="footer-left">
-          <ul class="foot">
-            <li><a href="index.htm">Home</a></li>
-            <li><a href="about.htm">About us</a></li>
-            <li><a href="resources.htm">Resources</a></li>
-            <li><a href="faq.htm">FAQs</a></li>
-            <li><a href="contact.htm">Contact</a></li>
-          </ul>
+      <div class="subject">
+        <div class="video">
+          <div class="video-wrapper">
+            <iframe frameborder="0" width=100% height=100% src="https://youtu.be/embed/bWH_FEhhyJo" allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      
+        <div class="worksheet">
+          <div class="link-wrapper">
+            <a class="worksheet-link" href="https://drive.google.com/file/d/1YlZRrAc094WrYkfwgcaprNPtw41_niLZ/view?usp=sharing">Electron structure worksheet</a>  
+          </div>
+        </div>
       </div>
 
-      <div class="footer-right">
-        <ul class="foot">
-          <li><a href="chemistry.htm">CHEMISTRY</a></li>
-          <li><a href="maths.htm">MATHEMATICS</a></li>
-        </ul>
-      </div>
       <p>&#169 2020 Sephton Tutoring</p>
     </footer>
   </div>
