@@ -94,4 +94,20 @@
   }
 }
 
+@media screen and (max-width:435px) {
+  .wrapper-tutor {
+    height:760px;
+  }
+  .tutor-card {
+    width:98%
+  }
+  .tutor-photo {
+    left:50%;
+    -ms-transform: translate(25%, 10%);
+    transform: translate(25%, 10%);
+  }
+  #s-bio {
+    padding-bottom:0;
+  }
+}
 

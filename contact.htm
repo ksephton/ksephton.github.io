@@ -73,6 +73,14 @@ h1 {
 }
 
 
+@media screen and (max-width:1000px) and (min-width:850px) {
+  .contact, .faq {
+    padding-left:0;
+  }
+
+}
+
+
 @media screen and (max-width:850px) {
   .contact, .faq, .page-container {
     width:100%;
@@ -82,11 +90,20 @@ h1 {
   }
 }
 
-@media screen and (max-width:1000px) and (min-width:850px) {
-  .contact, .faq {
-    padding-left:0;
-  }
 
+@media screen and (max-width:455px) {
+  .page-container {
+    height:2300px;
+  }
+  .contact, .faq {
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (max-width:335px) {
+  .page-container {
+    height:2550px;
+  }
 }
 
 
@@ -97,7 +114,7 @@ h1 {
 
 
 <div class="topnav" id="myTopnav">
-    <a href="index.htm" class="logo"><img id="logo" src="STLogo.png" alt="Sephton Tutoring Logo" style="height:60px;"></a>
+    <a href="index.htm" class="logo"><img class="nav-logo" src="STLogo.png" alt="Sephton Tutoring Logo"></a>
     <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="navFunction()">&#9776;</a>
     <ul id="navbar">
         <li><a href="index.htm" class="active">HOME</a></li>

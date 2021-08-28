@@ -117,7 +117,7 @@ h1 {
 }
 
 .main-text {
-  height:50%;
+  height:60%;
   margin: 0;
   position: absolute;
   top: 45%;
@@ -128,13 +128,13 @@ h1 {
 }
 
 .two-text {
-  height:50%;
+  height:60%;
   margin: 0;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
-  -ms-transform: translate(-50%, -70%);
-  transform: translate(-50%, -70%);
+  -ms-transform: translate(-50%, -60%);
+  transform: translate(-50%, -60%);
   text-align:center;
 }
 
@@ -180,13 +180,29 @@ h1 {
   }
 }
 
+@media screen and (max-width:470px) {
+  .main-text {
+    width:80%;
+  }
+  .two-text {
+    width:80%;
+  }
+  .main-image {
+    width:95%;
+    height:auto;
+  }
+  .part {
+    height:900px;
+  }
+}
+
 </style>
 </head>
 <body>
 
 
 <div class="topnav" id="myTopnav">
-    <a href="index.htm" class="logo"><img id="logo" src="STLogo.png" alt="Sephton Tutoring Logo" style="height:60px;"></a>
+    <a href="index.htm" class="logo"><img class="nav-logo" src="STLogo.png" alt="Sephton Tutoring Logo"></a>
     <a href="javascript:void(0);" style="font-size:20px;" class="icon" onclick="navFunction()">&#9776;</a>
     <ul id="navbar">
         <li><a href="index.htm" class="active">HOME</a></li>
@@ -238,7 +254,7 @@ h1 {
     <div class="half">
       <div class="wrapper">
         <div class="main-text">
-          <p id="second-text" class="text">We believe learning needs to be <span class="text-chem">active</span>, <span class="text-maths">purposeful</span> and<br>include plenty of<br> <span class="text-active">practice questions</span></p>
+          <p id="second-text" class="text">We believe learning needs to be <span class="text-chem">active</span>, <span class="text-maths">purposeful</span> and include plenty of<br> <span class="text-active">practice questions</span></p>
         </div>
       </div>
     </div>
@@ -283,7 +299,7 @@ h1 {
     <div class="wrapper-tutor">
       <div id="left-sarah" class="tutor-card">
         <img class="tutor-photo" src="sarah.png" alt="Sarah">
-        <ul class="bio">
+        <ul id="s-bio" class="bio">
             <li>Chemistry teacher in a UK school</li>
             <li>15+ years teaching experience including leadership roles (Vice Principal and Head of Science)</li>
             <li>A level examiner</li>

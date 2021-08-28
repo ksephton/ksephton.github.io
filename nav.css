@@ -14,6 +14,10 @@
   display: none;
 }
 
+#ST-logo {
+  height:100%;
+}
+
 #navbar {
     text-align: center;
     margin: 0 auto;
@@ -108,10 +112,11 @@
   font-family: 'Lora', serif;
   font-size: 30px;
   text-decoration:none;
+  height:85px;
 }
 
 .nav-logo {
-  height:2.5em;
+  height:100%;
 }
 
 .icon {
@@ -151,5 +156,16 @@
   .topnav.responsive #navbar .dropdown-content {display: none;}
   .topnav.responsive .logo {
     display: none;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .logo {
+    width:80%;
+    padding-top:3%;
+    padding-bottom:3%;
+  }
+  .nav-logo {
+    width:100%;
   }
 }
