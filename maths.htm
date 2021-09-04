@@ -18,7 +18,7 @@
 <link rel="stylesheet" type="text/css" href="footer.css" />
 
 <script type="text/javascript" src="navresponsive.js"></script>
-<script type="text/javascript" src="searchresponsive.js"></script>
+<script type="text/javascript" src="search_maths.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,23 +29,92 @@
 <style>
 body {margin:0;font-family: 'Lato', sans-serif; font-size: 20px;}
 
+
 .page-container {
   width:70%;
   margin:auto;
+  display:block;
   padding-top:35px;
-  height:1900px;
+
 }
 
-.answers {
+#area-tiles {
+  height:1100px;
+}
+
+.subject-tile {
+  width:50%;
+  float:left;
+  padding:5%;
+}
+
+.inside-gcse {
+  background-color:#BB8FCE;
+  padding:10px;
+  transition:box-shadow .3s;
+  height:500px;
+  padding-top:50px;
+  position: relative;
+}
+
+.inside-alevel {
+  background-color:#85E1FF;
+  padding:10px;
+  transition:box-shadow .3s;
+  height:500px;
+  padding-top:50px;
+  position: relative;
+}
+
+.name {
+  color:white;
   text-align:center;
-  padding:15px;
+}
+
+.subject:link {
+  text-decoration:none;
+}
+
+.inside-gcse:hover, .inside-alevel:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.5); 
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#answers {
+  list-style:none;
+  padding-top:150px;
+}
+
+#myUL {
+  display:none;
 }
 
 @media screen and (max-width:800px) {
+  .subject-tile {
+    width:100%;
+  }
+
   .page-container {
-    height:3500px;
+    height:2000px;
+  }
+
+  .center {
+    margin-left:auto;
+    margin-right:auto;
   }
 }
+
 
 </style>
 
@@ -68,11 +137,45 @@ body {margin:0;font-family: 'Lato', sans-serif; font-size: 20px;}
     </ul>
 </div>
 
-
-
-
 <div id="page" class="page-container">
-<input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search...">
+<input type="text" id="myInput" onkeyup="searchMaths()" placeholder="Search...">
+
+<div id="area-tiles">
+  <a class="subject" href="maths_gcse.htm">
+    <div class="subject-tile">
+      <div class="inside-gcse">
+        <img class="center" src="gcse_maths.png" alt="right-angled triangle">
+      </div>
+    </div
+  </a>
+
+  <a class="subject" href="maths_alevel.htm">
+    <div class="subject-tile">
+      <div class="inside-alevel">
+        <img class="center" src="alevel_maths.png" alt="sine graph">
+      </div>
+    </div>
+  </a>
+
+  <ul id="answers">
+  <li>
+    <div id="Morning maths challenges" class="section">
+      <div class="image">
+        <div class="worksheet-wrapper">
+          <a class="worksheet-link" href="https://drive.google.com/file/d/10Q-uiBBOS5UsmT3QT17gW9Glcp411bAc/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="halfimage" src="Morning_maths.png" alt="Morning Maths"></a>
+        </div>
+      </div>
+      
+      <div class="image">
+        <div class="worksheet-wrapper">
+
+        </div>
+      </div>
+    </div>
+  </li>
+  </ul>
+
+</div>
 
 
 <ul id="myUL">
@@ -140,11 +243,25 @@ body {margin:0;font-family: 'Lato', sans-serif; font-size: 20px;}
     </div>
   </li>
 
+  <li>
+    <div id="Integration" class="section">
+      <div class="image">
+        <div class="worksheet-wrapper">
+          <a class="worksheet-link" href="https://drive.google.com/file/d/1Cp3o75gZKiqCvSCt9LfJF_iOgWJeQsVs/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="halfimage" src="Integration_words.png" alt="Integration"></a>
+        </div>
+      </div>
+      
+      <div class="image">
+        <div class="worksheet-wrapper">
+          <a class="worksheet-link" href="https://drive.google.com/file/d/1KxOQhqS4BF7xQMRNiJDvviApkeeHTKs6/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="halfimage" src="Integration_worksheet.png" alt="Integration worksheet"></a> 
+        </div>
+      </div>
+    </div>
+  </li>
+
 </ul>
 
-<h3 class="answers">Answers to worksheets are available upon request for £1.50 each</h3>
 </div>
-
 
 
 <div class="footer">
@@ -174,6 +291,8 @@ body {margin:0;font-family: 'Lato', sans-serif; font-size: 20px;}
       <li><a href="gcse.htm">GCSE chemistry</a></li>
 
       <li class="ital"><a href="maths.htm">Maths resources</a></li>
+      <li><a href="maths_gcse.htm">GCSE maths</a></li>
+      <li><a href="maths_alevel.htm">A level maths</a></li>
     </ul>
   </div>
 

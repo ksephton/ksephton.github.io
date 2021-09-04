@@ -1,7 +1,7 @@
 .footer {
   background-color:#272727;
   color:#E5E4E4;
-  height:285px;
+  height:300px;
   font-size:17px;
   padding-top:20px;
   display:block;
@@ -70,7 +70,7 @@
     width:100%;
   }
   .footer {
-    height:550px;
+    height:590px;
   }
 }
 
