@@ -14,8 +14,7 @@
 
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <link rel="stylesheet" type="text/css" href="searchbar.css" />
-<link rel="stylesheet" type="text/css" href="video.css" />
-<link rel="stylesheet" type="text/css" href="footer.css" />
+<link rel="stylesheet" type="text/css" href="footer_new.css" />
 
 <script type="text/javascript" src="navresponsive.js"></script>
 <script type="text/javascript" src="searchresponsive.js"></script>
@@ -29,23 +28,84 @@
 <style>
 body {margin:0;font-family: 'Lato', sans-serif; font-size: 20px;}
 
+
 .page-container {
-  width:70%;
+  width:80%;
   margin:auto;
-  padding-top:35px;
-  height:700px;
+  height:1200px;
 }
 
-.answers {
-  text-align:center;
-  padding:15px;
+.contact {
+  width:35%;
+  float:right;
+  padding:5%;
+  display:block;
 }
 
-@media screen and (max-width:800px) {
+.faq {
+  width:65%;
+  float:left;
+  padding:5%;
+  display:block;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+}
+
+.contact-list {
+  list-style:none;
+}
+
+.contact-icon {
+  width:1.7em;
+}
+
+
+#qa {
+  list-style:none;
+}
+
+.question {
+  font-style: italic;
+  padding-top: 2em;
+  padding-bottom: 0.5em;
+}
+
+
+@media screen and (max-width:1000px) and (min-width:850px) {
+  .contact, .faq {
+    padding-left:0;
+  }
+
+}
+
+
+@media screen and (max-width:850px) {
+  .contact, .faq, .page-container {
+    width:100%;
+  }
   .page-container {
-    height:1200px;
+    height:1770px;
   }
 }
+
+
+@media screen and (max-width:510px) {
+  .page-container {
+    height:2000px;
+  }
+  .contact, .faq {
+    overflow-wrap: break-word;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .page-container {
+    height:2500px;
+  }
+}
+
 
 </style>
 
@@ -68,36 +128,49 @@ body {margin:0;font-family: 'Lato', sans-serif; font-size: 20px;}
     </ul>
 </div>
 
+<div class="page-container">
+  <div class="contact">
+    <h1>Contact us</h1>
+    <ul class="contact-list">
+      <li class="question">For Chemistry tuiton enquiries:</li>
+      <li><img src="mail.png" alt="mail" class="contact-icon"> sarah@sephtontutoring.com</li>
 
+      <li class="question">For Maths tuiton enquiries:</li>
+      <li><img src="mail.png" alt="mail" class="contact-icon"> katherine@sephtontutoring.com</li>
 
+      <li class="question">Message on Whatsapp:</li>
+      <li><img src="WhatsApp_Logo_3.png" alt="Whatsapp" class="contact-icon">+44 (0)7512 803 733</li>
+      <li class="question">Or call:</li>
 
-<div id="page" class="page-container">
-<input type="text" id="myInput" onkeyup="searchFunction()" placeholder="Search...">
+      <li><img src="phone.png" alt="phone" class="contact-icon">+44 (0)7512 803 733</li>
+      <li class="question">Check us out on social media:</li>
 
+      <li class="socials">
+        <a href="https://www.facebook.com/Sephton-Tutoring-101273655270668" target="_blank" rel="noopener noreferrer"><img src="f_logo_RGB-Black_58.png" alt="Facebook" class="social-icon"></a>
+        <a href="https://www.pinterest.co.uk/kvsephton/_created/" target="_blank" rel="noopener noreferrer"><img src="badgeRGB-000000.png" alt="Pinterest" class="social-icon"></a>
+        <a href="https://www.youtube.com/channel/UCWHHxh1XUPbUZBeu8k5veGQ" target="_blank" rel="noopener noreferrer"><img src="youtube_social_circle_dark.png" alt="Youtube" class="social-icon"></a>
+        <a href="https://www.instagram.com/sephtontutoring/" target="_blank" rel="noopener noreferrer"><img src="glyph-logo_May2016.png" alt="Instagram" class="social-icon"></a>
+      </li>
+    </ul>
+  </div>
 
-<ul id="myUL">
-  <li>
-    <div id="Integration" class="section">
-      <div class="image">
-        <div class="worksheet-wrapper">
-          <a class="worksheet-link" href="https://drive.google.com/file/d/1Cp3o75gZKiqCvSCt9LfJF_iOgWJeQsVs/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="halfimage" src="Integration_words.png" alt="Integration"></a>
-        </div>
-      </div>
-      
-      <div class="image">
-        <div class="worksheet-wrapper">
-          <a class="worksheet-link" href="https://drive.google.com/file/d/1KxOQhqS4BF7xQMRNiJDvviApkeeHTKs6/view?usp=sharing" target="_blank" rel="noopener noreferrer"><img class="halfimage" src="Integration_worksheet.png" alt="Integration worksheet"></a> 
-        </div>
-      </div>
-    </div>
-  </li>
+  <div class="faq">
+    <h1>FAQs</h1>
+    <ul id="qa">
+      <li class="question">How much does tuition cost?</li>
+      <li class="answer">We offer a free 30 minute introductory session before the start of paid lessons in order to meet the student, informally assess their needs and ensure that the technology works. Homework will be given per lesson. Reductions are available for block booking. Please contact us for specific pricing - Chemistry (sarah@sephtontutoring.com) and Maths (katherine@sephtontutoring.com).</li>
 
-</ul>
+      <li class="question">Are the tuition sessions delivered online?</li>
+      <li class="answer">Yes – all the sessions will be delivered online using Google Meet and an interactive whiteboard.</li>
 
-<h3 class="answers">Answers to worksheets are available upon request for £1.50 each</h3>
+      <li class="question">When and how do I pay for the tuition?</li>
+      <li class="answer">Payment needs to be sent electronically before 9.00 am (UK time) on the day of the lesson.</li>
+
+      <li class="question">What should I do if I need to cancel a tuition session?</li>
+      <li class="answer">If you need to cancel a session due to illness for example, then contact us as soon as possible. Cancellation before 9.00 am (UK time) on the tuition day will not be charged. As we will have reserved your time slot, if you cancel after this time then you will be charged the full amount.</li>
+    </ul>
+  </div>
 </div>
-
-
 
 <div class="footer">
   <div class="fourth-footer">
@@ -146,7 +219,6 @@ body {margin:0;font-family: 'Lato', sans-serif; font-size: 20px;}
 <div class="bottom">
   <p class="copyright">&copy; <script>document.write(new Date().getFullYear())</script> Sephton Tutoring</p>
 </div>
-
 
 
 </body>
