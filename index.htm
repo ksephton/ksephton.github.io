@@ -116,6 +116,19 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
+.wrapper #img-top {
+  display:none;
+}
+
+.wrapper:hover #img-top {
+  display:inline;
+}
+
+.wrapper:hover #img-bot {
+  display:none;
+}
+
+
 .main-text {
   height:60%;
   margin: 0;
@@ -232,7 +245,8 @@ h1 {
   <div class="slim">
     <div class="half">
       <div class="wrapper">
-        <img class="main-image" src="chemist.png" alt="Chemist">
+        <img id="img-bot" class="main-image" src="chemist_2.png" alt="Chemist">
+        <img id="img-top" class="main-image" src="chemist_1.png" alt="Chemist">
       </div>
     </div>
 
