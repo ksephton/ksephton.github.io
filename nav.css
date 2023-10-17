@@ -128,7 +128,7 @@
 
 @media screen and (max-width: 980px) {
   .logo {
-    width:70%;
+    width:80%;
   }
 
   #navbar li {
@@ -159,7 +159,7 @@
   }
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 290px) {
   .logo {
     width:80%;
     padding-top:3%;
@@ -167,5 +167,8 @@
   }
   .nav-logo {
     width:100%;
+    height:auto;
+
   }
 }
+
